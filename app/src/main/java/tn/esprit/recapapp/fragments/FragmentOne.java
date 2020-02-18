@@ -21,7 +21,6 @@ public class FragmentOne extends Fragment {
 
         rootView = inflater.inflate(R.layout.frag_one, container, false);
 
-
         return rootView;
     }
 }

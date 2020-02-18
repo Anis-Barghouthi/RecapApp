@@ -17,7 +17,7 @@ public class ImplicitIntentActivity extends AppCompatActivity {
     }
 
     public void callIntent(View view) {
-        Intent intent = null;
+        Intent intent; // is null
 
         switch (view.getId()){
             case R.id.btn_button1:

@@ -13,8 +13,6 @@
         android:layout_below="@id/separator"
         android:layout_margin="10dp" />
 
-
-
     <RelativeLayout
         android:id="@+id/separator"
         android:layout_width="match_parent"
@@ -92,8 +90,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="Intent"
             android:onClick="callIntent"
+            android:text="Intent"
             android:textColor="@color/white" />
 
         <RelativeLayout

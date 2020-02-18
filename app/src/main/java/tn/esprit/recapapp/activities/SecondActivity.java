@@ -8,6 +8,7 @@ import tn.esprit.recapapp.fragments.FragmentOne;
 import tn.esprit.recapapp.fragments.FragmentTwo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -98,6 +99,15 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void callIntent(View view) {
-        startActivity(new Intent(this, ImplicitIntentActivity.class));
+        switch (view.getId()) {
+            case R.id.btn_button4:
+                startActivity(new Intent("android.media.action.IMAGE_CAPTURE"));
+//                intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                break;
+            default:
+                startActivity(new Intent(this, ImplicitIntentActivity.class));
+                break;
+        }
     }
+
 }

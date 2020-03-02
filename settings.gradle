@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='RecapApp'
+rootProject.name='RecapAppAll'
